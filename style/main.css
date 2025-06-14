@@ -71,7 +71,7 @@ nav a:hover {
 }
 
 main {
-  padding: 60px 20px 20px 20px; /* más espacio superior */
+  padding: 120px 20px 20px 20px; /* más espacio superior para empujar el contenido hacia abajo */
   max-width: 800px;
   margin: auto;
   text-align: center;
@@ -104,6 +104,6 @@ footer {
   }
 
   main {
-    padding-top: 40px;
+    padding-top: 60px;
   }
 }
