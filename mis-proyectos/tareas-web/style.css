@@ -1,0 +1,42 @@
+body {
+  font-family: Georgia, serif;
+  background-color: #e0f0ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+.input-area {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+input[type="text"],
+input[type="number"] {
+  flex: 1;
+  padding: 5px;
+}
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#tareas {
+  margin-top: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.tarea {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.tarea span.completada {
+  text-decoration: line-through;
+  color: green;
+}
