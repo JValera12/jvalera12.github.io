@@ -15,19 +15,16 @@ body {
   padding: 0 20px;
 }
 
-header {
-  background-color: #f5f5f5;
-  padding: 20px;
-  border-bottom: 1px solid #ddd;
-}
-
+/* Header y perfil centrado */
 .profile-header {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 15px;
-  padding: 20px 0;
-  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px 0;
+  background-color: #ffffff;
+}
+
+.profile-content {
   text-align: center;
 }
 
@@ -37,14 +34,15 @@ header {
   border-radius: 50%;
   object-fit: cover;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
 
-header h1 {
-  margin: 0;
+.profile-content h1 {
   font-size: 2em;
+  margin: 0;
 }
 
+/* Menú de navegación */
 nav {
   display: flex;
   justify-content: center;
@@ -74,69 +72,18 @@ nav a:hover {
   border-bottom: 2px solid #007acc;
 }
 
+/* Contenido principal */
 main {
-  padding: 120px 20px 20px 20px; /* más espacio superior para empujar el contenido hacia abajo */
+  padding: 60px 20px 20px 20px;
   max-width: 800px;
   margin: auto;
   text-align: center;
 }
 
-footer {
-  background-color: #f5f5f5;
-  text-align: center;
-  padding: 10px;
-  font-size: 0.9em;
-  border-top: 1px solid #ddd;
-  margin-top: 40px;
-}
-
-@media (max-width: 768px) {
-  .profile-header {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 0;
-  }
-
-  nav {
-    padding: 10px 0;
-  }
-
-  main {
-    padding-top: 60px;
-  }
-}
-
+/* Chatbot */
 #chatbot {
   margin-top: 40px;
   text-align: center;
-}
-
-#chat-window {
-  margin-top: 20px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#chat-log {
-  border: 1px solid #ccc;
-  padding: 10px;
-  height: 200px;
-  overflow-y: auto;
-  background-color: #f9f9f9;
-  text-align: left;
-}
-
-#user-input {
-  width: 70%;
-  padding: 10px;
-  margin-top: 10px;
 }
 
 #chatInput {
@@ -157,4 +104,41 @@ button {
 
 button:hover {
   background-color: #005f99;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+/* Responsive: móviles y pantallas pequeñas */
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  nav {
+    padding: 10px 0;
+  }
+
+  main {
+    padding-top: 40px;
+  }
+
+  #chatInput {
+    width: 80%;
+  }
 }
