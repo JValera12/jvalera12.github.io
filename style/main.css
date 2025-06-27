@@ -1,0 +1,165 @@
+
+/* Base styles for valera25 portfolio */
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 5px;
+}
+
+nav a:hover {
+  color: #007acc;
+  border-bottom: 2px solid #007acc;
+}
+
+main {
+  padding: 120px 20px 20px 20px; /* más espacio superior para empujar el contenido hacia abajo */
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  nav {
+    padding: 10px 0;
+  }
+
+  main {
+    padding-top: 60px;
+  }
+#chatbot {
+  margin-top: 60px;
+  text-align: center;
+}
+
+#chat-window {
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#chat-log {
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+#user-input {
+  width: 70%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#chatbot {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#chatInput {
+  padding: 8px;
+  width: 60%;
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  margin-left: 8px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f99;
+}
